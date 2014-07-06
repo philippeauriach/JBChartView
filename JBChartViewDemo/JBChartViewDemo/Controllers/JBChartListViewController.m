@@ -11,13 +11,15 @@
 // Controllers
 #import "JBBarChartViewController.h"
 #import "JBLineChartViewController.h"
+#import "JBStackedBarChartViewController.h"
 
 // Views
 #import "JBChartTableCell.h"
 
 typedef NS_ENUM(NSInteger, JBChartListViewControllerRow){
-	JBChartListViewControllerRowLineChart,
+    JBChartListViewControllerRowLineChart,
     JBChartListViewControllerRowBarChart,
+    JBChartListViewControllerRowStackedBarChart,
     JBChartListViewControllerRowCount
 };
 
@@ -51,7 +53,7 @@ NSInteger const kJBChartListViewControllerCellHeight = 100;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     JBChartTableCell *cell = [tableView dequeueReusableCellWithIdentifier:kJBChartListViewControllerCellIdentifier forIndexPath:indexPath];    
-    cell.textLabel.text = indexPath.row == JBChartListViewControllerRowLineChart ? kJBStringLabelAverageDailyRainfall : kJBStringLabelAverageMonthlyTemperature;
+    cell.textLabel.text = indexPath.row == JBChartListViewControllerRowLineChart ? kJBStringLabelAverageDailyRainfall : indexPath.row == JBChartListViewControllerRowBarChart ? kJBStringLabelAverageMonthlyTemperature : kJBStringStackedBarChartLabel;
     cell.detailTextLabel.text = indexPath.row == JBChartListViewControllerRowLineChart ? kJBStringLabelSanFrancisco2013 : kJBStringLabelWorldwide2012;
     cell.type = indexPath.row == JBChartListViewControllerRowLineChart ? JBChartTableCellTypeLineChart : JBChartTableCellTypeBarChart;
     return cell;
@@ -77,6 +79,11 @@ NSInteger const kJBChartListViewControllerCellHeight = 100;
     {
         JBBarChartViewController *barChartController = [[JBBarChartViewController alloc] init];
         [self.navigationController pushViewController:barChartController animated:YES];
+    }
+    else if (indexPath.row == JBChartListViewControllerRowStackedBarChart)
+    {
+        JBStackedBarChartViewController *stackedBarChartController = [[JBStackedBarChartViewController alloc] init];
+        [self.navigationController pushViewController:stackedBarChartController animated:YES];
     }
 }
 

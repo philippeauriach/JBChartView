@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		304039BB1969532A007257BC /* JBStackedBarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304039BA1969532A007257BC /* JBStackedBarChartViewController.m */; };
+		304039BD19695FDC007257BC /* testAutolayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304039BC19695FDC007257BC /* testAutolayout.xib */; };
+		30827A3319699F9700D02FF6 /* JBStackedBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30827A3219699F9700D02FF6 /* JBStackedBarChartView.m */; };
 		9B0725211829822A0052109B /* JBChartListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0725201829822A0052109B /* JBChartListViewController.m */; };
 		9B2E530518218CF20079B9D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2E530418218CF20079B9D2 /* Foundation.framework */; };
 		9B2E530718218CF20079B9D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2E530618218CF20079B9D2 /* CoreGraphics.framework */; };
@@ -42,6 +45,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		304039B91969532A007257BC /* JBStackedBarChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBStackedBarChartViewController.h; sourceTree = "<group>"; };
+		304039BA1969532A007257BC /* JBStackedBarChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBStackedBarChartViewController.m; sourceTree = "<group>"; };
+		304039BC19695FDC007257BC /* testAutolayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testAutolayout.xib; sourceTree = "<group>"; };
+		30827A3119699F9700D02FF6 /* JBStackedBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBStackedBarChartView.h; sourceTree = "<group>"; };
+		30827A3219699F9700D02FF6 /* JBStackedBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBStackedBarChartView.m; sourceTree = "<group>"; };
 		9B07251F1829822A0052109B /* JBChartListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBChartListViewController.h; sourceTree = "<group>"; };
 		9B0725201829822A0052109B /* JBChartListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBChartListViewController.m; sourceTree = "<group>"; };
 		9B2E530118218CF20079B9D2 /* JBChartViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JBChartViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +197,8 @@
 				9B0725201829822A0052109B /* JBChartListViewController.m */,
 				9B6A68DF1829BED5006DB3BF /* JBLineChartViewController.h */,
 				9B6A68E01829BED5006DB3BF /* JBLineChartViewController.m */,
+				304039B91969532A007257BC /* JBStackedBarChartViewController.h */,
+				304039BA1969532A007257BC /* JBStackedBarChartViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -261,6 +271,9 @@
 				9B6A68D21829AB9F006DB3BF /* JBChartView.m */,
 				9BE0B0AB182AD26400232023 /* JBLineChartView.h */,
 				9BE0B0AC182AD26400232023 /* JBLineChartView.m */,
+				30827A3119699F9700D02FF6 /* JBStackedBarChartView.h */,
+				30827A3219699F9700D02FF6 /* JBStackedBarChartView.m */,
+				304039BC19695FDC007257BC /* testAutolayout.xib */,
 			);
 			name = Charts;
 			sourceTree = "<group>";
@@ -371,6 +384,7 @@
 				9B603D47182C7002000A76D0 /* icon-jawbone-logo.png in Resources */,
 				9B603D48182C7002000A76D0 /* icon-jawbone-logo@2x.png in Resources */,
 				9B698F19182D7DAE003C135F /* icon-line-chart@2x.png in Resources */,
+				304039BD19695FDC007257BC /* testAutolayout.xib in Resources */,
 				9B698F0A182D720E003C135F /* icon-arrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +402,7 @@
 				9B603D3E182C6E79000A76D0 /* JBBaseNavigationController.m in Sources */,
 				9B698F11182D7BCF003C135F /* JBChartTableCell.m in Sources */,
 				9B6A68DB1829ADE1006DB3BF /* JBBarChartView.m in Sources */,
+				30827A3319699F9700D02FF6 /* JBStackedBarChartView.m in Sources */,
 				9B2E531118218CF20079B9D2 /* main.m in Sources */,
 				9B698F01182D5F44003C135F /* JBLineChartFooterView.m in Sources */,
 				9BE0B0C7182B161000232023 /* JBChartHeaderView.m in Sources */,
@@ -399,6 +414,7 @@
 				9B6A68E11829BED5006DB3BF /* JBLineChartViewController.m in Sources */,
 				9B2E533F18218D310079B9D2 /* AppDelegate.m in Sources */,
 				9BD57BBC18D13D1A00ACFA52 /* JBChartTooltipView.m in Sources */,
+				304039BB1969532A007257BC /* JBStackedBarChartViewController.m in Sources */,
 				9B603D4B182C7117000A76D0 /* JBBaseViewController.m in Sources */,
 				9B0725211829822A0052109B /* JBChartListViewController.m in Sources */,
 			);
@@ -499,7 +515,9 @@
 				GCC_PREFIX_HEADER = "JBChartViewDemo/JBChartViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "JBChartViewDemo/JBChartViewDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -513,7 +531,9 @@
 				GCC_PREFIX_HEADER = "JBChartViewDemo/JBChartViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "JBChartViewDemo/JBChartViewDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

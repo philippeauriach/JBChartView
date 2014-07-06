@@ -14,6 +14,7 @@
 
 #define kJBStringLabel2012 localize(@"label.2012", @"2012")
 #define kJBStringLabelAverageMonthlyTemperature localize(@"label.average.monthly.temperature", @"Average Monthly Temperature")
+#define kJBStringStackedBarChartLabel localize(@"Stacked bar charts example", @"Stacked bar chart example")
 #define kJBStringLabelWorldwide2012 localize(@"label.worldwide.2013", @"Worldwide - 2012")
 #define kJBStringLabelWorldwideAverage localize(@"label.worldwide.average", @"Worldwide Average")
 #define kJBStringLabelDegreesFahrenheit localize(@"label.degrees.fahrenheit", @"%d%@F")

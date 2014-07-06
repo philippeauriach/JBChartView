@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6154.21" systemVersion="14A261i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6154.21"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="566"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caB-ej-Yhg" userLabel="ref1">
+                    <rect key="frame" x="6" y="0.0" width="41" height="556"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qL-Kd-DOG" userLabel="ref2">
+                    <rect key="frame" x="55" y="0.0" width="48" height="556"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="IGF-TC-EXl"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="frf-py-NPU" userLabel="View1">
+                    <rect key="frame" x="194" y="0.0" width="232" height="112"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23N-Bp-YB6" userLabel="View2">
+                    <rect key="frame" x="194" y="112" width="232" height="167"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ny-hv-BKw" userLabel="View3">
+                    <rect key="frame" x="194" y="278" width="232" height="288"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9qL-Kd-DOG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="55" id="9Sp-UM-7If"/>
+                <constraint firstItem="9qL-Kd-DOG" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" constant="-10" id="9e3-kd-4D0"/>
+                <constraint firstItem="caB-ej-Yhg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KXQ-Rq-NPW"/>
+                <constraint firstItem="23N-Bp-YB6" firstAttribute="top" secondItem="frf-py-NPU" secondAttribute="bottom" id="LbG-37-ReI"/>
+                <constraint firstItem="frf-py-NPU" firstAttribute="height" secondItem="caB-ej-Yhg" secondAttribute="height" multiplier="0.2" id="MDF-dc-bXW"/>
+                <constraint firstAttribute="trailing" secondItem="23N-Bp-YB6" secondAttribute="trailing" id="MWx-bT-tL0"/>
+                <constraint firstItem="caB-ej-Yhg" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" constant="-10" id="Q63-Nd-mYE"/>
+                <constraint firstItem="3Ny-hv-BKw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="194" id="U1s-tg-6en"/>
+                <constraint firstItem="23N-Bp-YB6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="194" id="Vrn-uZ-KpB"/>
+                <constraint firstItem="9qL-Kd-DOG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cd5-TC-O57"/>
+                <constraint firstItem="frf-py-NPU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="194" id="eQ3-6F-XDR"/>
+                <constraint firstAttribute="trailing" secondItem="frf-py-NPU" secondAttribute="trailing" id="fL8-mX-cIq"/>
+                <constraint firstItem="caB-ej-Yhg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="6" id="kOQ-kD-jVd"/>
+                <constraint firstItem="9qL-Kd-DOG" firstAttribute="leading" secondItem="caB-ej-Yhg" secondAttribute="trailing" constant="8" symbolic="YES" id="lAs-Rk-SZP"/>
+                <constraint firstItem="3Ny-hv-BKw" firstAttribute="top" secondItem="23N-Bp-YB6" secondAttribute="bottom" constant="-1" id="njE-Tf-dC6"/>
+                <constraint firstItem="23N-Bp-YB6" firstAttribute="height" secondItem="9qL-Kd-DOG" secondAttribute="height" multiplier="0.3" id="ojq-f2-Fit"/>
+                <constraint firstItem="frf-py-NPU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tkd-Iz-kre"/>
+                <constraint firstAttribute="trailing" secondItem="3Ny-hv-BKw" secondAttribute="trailing" id="uET-ry-pLR"/>
+                <constraint firstAttribute="bottom" secondItem="3Ny-hv-BKw" secondAttribute="bottom" id="yft-g3-zi6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="369" y="557"/>
+        </view>
+    </objects>
+</document>
