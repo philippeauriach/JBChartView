@@ -229,7 +229,7 @@ static UIColor *kJBBarChartViewDefaultBarColor = nil;
                             
                             //Calculate the percentage of height the stacked should take, and apply it as a constraint related to the height of the ref view (that's the only reason we have a ref view) (this is actually where everything is happening !)
                             CGFloat stackHeight = [(NSNumber*)[self.chartStackedHeightDataDictionary objectForKey:[NSString stringWithFormat:@"%d_%d", [key intValue], dataIndex]] floatValue];
-                            CGFloat percent = stackHeight / totalHeight;
+                            CGFloat percent = totalHeight <= 0 ? 0 : stackHeight / totalHeight;
                             [barView addConstraint:[NSLayoutConstraint constraintWithItem:stacked attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:refView attribute:NSLayoutAttributeHeight multiplier:percent constant:0]];
                             
                             //align bottom of the stacked with the bottom of the previous tsacked
