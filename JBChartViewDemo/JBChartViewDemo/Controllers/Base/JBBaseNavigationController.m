@@ -8,6 +8,10 @@
 
 #import "JBBaseNavigationController.h"
 
+// Numerics
+NSInteger const kJBBaseNavigationControllerBarTintColorMinSystemVersion = 7;
+NSInteger const kJBBaseNavigationControllerTintColorMinSystemVersion = 7;
+
 @implementation JBBaseNavigationController
 
 #pragma mark - Alloc/Init
@@ -18,9 +22,23 @@
     if (self)
     {
         self.navigationBar.translucent = NO;
-        [[UINavigationBar appearance] setBarTintColor:kJBColorNavigationTint];
-        [[UINavigationBar appearance] setTintColor:kJBColorNavigationBarTint];
-        self.interactivePopGestureRecognizer.enabled = NO;
+        
+        // Bar tint (iOS 7)
+        if ([[[UIDevice currentDevice] systemVersion] floatValue] >= kJBBaseNavigationControllerBarTintColorMinSystemVersion)
+        {
+            [[UINavigationBar appearance] setBarTintColor:kJBColorNavigationTint];
+        }
+
+        // Tint (iOS 7)
+        if ([[[UIDevice currentDevice] systemVersion] floatValue] >= kJBBaseNavigationControllerTintColorMinSystemVersion)
+        {
+            [[UINavigationBar appearance] setTintColor:kJBColorNavigationBarTint];
+        }
+        
+        if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)])
+        {
+            self.interactivePopGestureRecognizer.enabled = NO;
+        }
     }
     return self;
 }
